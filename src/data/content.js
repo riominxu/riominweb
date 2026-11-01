@@ -114,6 +114,21 @@ const chiangMaiGalleryLabels = [
   '展览现场 / 模型与图纸',
 ];
 
+const industrialStrataAssets = import.meta.glob('../assets/industrial-strata/gallery/*.webp', {
+  eager: true,
+  import: 'default',
+});
+
+const industrialStrataImage = (number) =>
+  industrialStrataAssets[`../assets/industrial-strata/gallery/industrial-strata-${number}.webp`];
+
+const industrialStrataLabels = [
+  '广州工业厂区历史与产物',
+  '南石头监狱遗址概念模型',
+  '新旧并置研究 / Zeche Zollverein',
+  '新旧并置研究 / 空间策略',
+];
+
 export const profile = {
   name: '徐韫琳',
   roman: 'XU YUNLIN',
@@ -672,6 +687,36 @@ const chiangMaiProject = {
   tags: ['Physical Model', 'Exhibition', 'Spatial Research'],
 };
 
+const industrialStrataProject = {
+  id: 'industrial-strata',
+  index: '09',
+  title: '重层工业',
+  english: 'INDUSTRIAL STRATA / GUANGZHOU',
+  category: '工业遗产 · 实体模型 · 展览研究',
+  year: '2026—',
+  role: '设计研究 / 模型与展览',
+  context: '广州工业遗址研究 / 进行中',
+  image: industrialStrataImage('02'),
+  imageAlt: '南石头监狱遗址概念模型',
+  imagePosition: 'center',
+  summary:
+    '从广州四座工业厂的档案出发，把旧厂、遗址与新功能之间的层积关系转译为实体模型与展览。',
+  description:
+    '项目以广州油罐厂、电池厂、纺织厂与造纸厂的历史和产物为研究起点，梳理工业城市的时间层积；并为南石头监狱遗址制作概念模型，通过 Zeche Zollverein 的案例模型比较新旧元素并置、覆盖与穿插的空间策略。项目仍在进行中，网页先收录研究模型与展览现场。',
+  metrics: [
+    { value: '04', label: '座广州工业厂区' },
+    { value: '01', label: '南石头遗址概念模型' },
+    { value: '02', label: '组新旧并置研究' },
+  ],
+  gallery: industrialStrataLabels.map((label, index) => ({
+    src: industrialStrataImage(String(index + 1).padStart(2, '0')),
+    label,
+    alt: `重层工业项目图像：${label}`,
+  })),
+  deliverables: ['工业档案研究', '概念模型', '案例比较模型', '展览呈现'],
+  tags: ['Industrial Heritage', 'Physical Model', 'Adaptive Reuse'],
+};
+
 /**
  * Project information architecture.
  *
@@ -720,7 +765,7 @@ export const projectCategories = [
     english: 'PHYSICAL MODEL / EXHIBITION',
     description: '以实体模型、材料实验与布展为媒介，让空间研究从图纸走向可触摸的现场。',
     theme: 'exhibition',
-    projects: [chiangMaiProject],
+    projects: [chiangMaiProject, industrialStrataProject],
   },
 ];
 

@@ -10,6 +10,7 @@ const SHELF_ORDER = [
   'west-juye',
   'landfill-park',
   'chiang-mai',
+  'industrial-strata',
 ];
 
 const SHORT_LABEL = {
@@ -21,6 +22,7 @@ const SHORT_LABEL = {
   'west-juye': 'WEST JUYE RIVER',
   'landfill-park': 'LANDFILL PARK',
   'chiang-mai': 'CHIANG MAI',
+  'industrial-strata': 'INDUSTRIAL STRATA',
 };
 
 const ordered = [
