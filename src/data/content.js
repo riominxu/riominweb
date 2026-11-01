@@ -696,8 +696,8 @@ const industrialStrataProject = {
   year: '2026—',
   role: '设计研究 / 模型与展览',
   context: '广州工业遗址研究 / 进行中',
-  image: industrialStrataImage('02'),
-  imageAlt: '南石头监狱遗址概念模型',
+  image: industrialStrataImage('01'),
+  imageAlt: '广州工业厂区历史与产物展览',
   imagePosition: 'center',
   summary:
     '从广州四座工业厂的档案出发，把旧厂、遗址与新功能之间的层积关系转译为实体模型与展览。',
