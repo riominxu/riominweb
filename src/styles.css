@@ -2247,6 +2247,10 @@ a.contact-row__value:hover {
   color: #8a6a3c;
 }
 
+.project-category-index a:nth-of-type(4) .project-category-index__letter {
+  color: #6f6252;
+}
+
 .project-categories {
   display: flex;
   flex-direction: column;
@@ -2269,6 +2273,10 @@ a.contact-row__value:hover {
 
 .project-category--research {
   --cat-accent: #5f729d;
+}
+
+.project-category--exhibition {
+  --cat-accent: #6f6252;
 }
 
 .project-category--placeholder {

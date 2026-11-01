@@ -93,6 +93,27 @@ const lineageGalleryLabels = [
   '室外家具转译',
 ];
 
+const chiangMaiGalleryAssets = import.meta.glob('../assets/chiang-mai/gallery/*.webp', {
+  eager: true,
+  import: 'default',
+});
+
+const chiangMaiImage = (number) =>
+  chiangMaiGalleryAssets[`../assets/chiang-mai/gallery/chiang-mai-${number}.webp`];
+
+const chiangMaiGalleryLabels = [
+  '展览现场 / 图纸与模型',
+  '清迈古城 1:4000 模型',
+  '庭院与种植模型',
+  '台阶与入口模型',
+  '墙体开口模型',
+  '亭与种植模型',
+  'Site 5 / 1:100 节点模型',
+  '水景与地形模型',
+  '材料与缝隙细部',
+  '展览现场 / 模型与图纸',
+];
+
 export const profile = {
   name: '徐韫琳',
   roman: 'XU YUNLIN',
@@ -621,6 +642,36 @@ const landfillProject = {
   ],
 };
 
+const chiangMaiProject = {
+  id: 'chiang-mai',
+  index: '08',
+  title: '清迈正念之旅',
+  english: 'MINDFULNESS JOURNEY / CHIANG MAI',
+  category: '实体模型 · 展览设计 · 空间研究',
+  year: '2026',
+  role: '独立设计 / 模型与布展',
+  context: '香港大学 MLA Studio P3',
+  image: chiangMaiImage('01'),
+  imageAlt: '清迈正念之旅实体模型与展览现场',
+  imagePosition: 'center',
+  summary:
+    '把清迈古城的七个日常空间转译为实体模型与展览，让正念回到行走、观看与触摸的现场。',
+  description:
+    '项目以清迈古城的街巷、寺庙、市场与城墙为研究背景，将七个城市节点制作成不同尺度的实体模型，并与图纸、影像、干花和灯光共同组成展览现场。网页节选聚焦模型制作、材料与布展，不展开具体空间设计。',
+  metrics: [
+    { value: '07', label: '个城市节点' },
+    { value: '1:4000', label: '清迈古城模型' },
+    { value: '1:100', label: '节点模型' },
+  ],
+  gallery: chiangMaiGalleryLabels.map((label, index) => ({
+    src: chiangMaiImage(String(index + 1).padStart(2, '0')),
+    label,
+    alt: `清迈正念之旅项目图像：${label}`,
+  })),
+  deliverables: ['空间研究', '实体模型', '展览布展', '现场影像'],
+  tags: ['Physical Model', 'Exhibition', 'Spatial Research'],
+};
+
 /**
  * Project information architecture.
  *
@@ -661,6 +712,15 @@ export const projectCategories = [
       westJuyeProject,
       landfillProject,
     ],
+  },
+  {
+    id: 'physical-exhibition',
+    index: 'D',
+    title: '实体模型 / 展览项目',
+    english: 'PHYSICAL MODEL / EXHIBITION',
+    description: '以实体模型、材料实验与布展为媒介，让空间研究从图纸走向可触摸的现场。',
+    theme: 'exhibition',
+    projects: [chiangMaiProject],
   },
 ];
 
