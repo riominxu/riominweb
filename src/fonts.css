@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'Noto Serif SC';
+  src: url('./assets/fonts/noto-serif-sc-900.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans SC';
+  src: url('./assets/fonts/noto-sans-sc-vf.woff2') format('woff2');
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(./assets/fonts/barlow-condensed-500-7969511e.woff2) format('woff2');
+  unicode-range: U+20-7e, U+a9, U+ae, U+b0, U+b7, U+d7, U+2013-2014, U+2122, U+2190-2193;
+}
+
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(./assets/fonts/barlow-condensed-600-06fb41fd.woff2) format('woff2');
+  unicode-range: U+20-7e, U+a9, U+ae, U+b0, U+b7, U+d7, U+2013-2014, U+2122, U+2190-2193;
+}
+
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(./assets/fonts/barlow-condensed-700-d0878d7f.woff2) format('woff2');
+  unicode-range: U+20-7e, U+a9, U+ae, U+b0, U+b7, U+d7, U+2013-2014, U+2122, U+2190-2193;
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./assets/fonts/ibm-plex-mono-400-5603c531.woff2) format('woff2');
+  unicode-range: U+20-7e, U+a9, U+ae, U+b0, U+b7, U+d7, U+2013-2014, U+2122, U+2190-2193;
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(./assets/fonts/ibm-plex-mono-500-944d7fdb.woff2) format('woff2');
+  unicode-range: U+20-7e, U+a9, U+ae, U+b0, U+b7, U+d7, U+2013-2014, U+2122, U+2190-2193;
+}

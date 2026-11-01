@@ -1,10 +1,4 @@
-@font-face {
-  font-family: 'XY Serif';
-  src: url('./assets/fonts/SourceHanSerifSC-Heavy-subset.woff2') format('woff2');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
+@import './fonts.css';
 
 :root {
   --bg: #edebe6;
@@ -22,10 +16,10 @@
   --accent: #1f3fb0;
   --accent-soft: rgba(31, 63, 176, 0.09);
   --accent-deep: #162f86;
-  --serif: 'XY Serif', 'Noto Serif SC', 'Songti SC', 'STSong', 'SimSun', serif;
-  --display: 'Bahnschrift', 'Arial Narrow', 'DIN Alternate', 'Noto Sans SC', sans-serif;
-  --sans: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', 'Heiti SC', sans-serif;
-  --mono: 'Cascadia Mono', 'SFMono-Regular', 'Consolas', 'Liberation Mono', monospace;
+  --serif: 'Noto Serif SC', 'Songti SC', 'STSong', 'SimSun', serif;
+  --display: 'Barlow Condensed', 'Noto Sans SC', sans-serif;
+  --sans: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --mono: 'IBM Plex Mono', 'Noto Sans SC', ui-monospace, 'SFMono-Regular', monospace;
   --container: 1700px;
   --gutter: clamp(24px, 4.15vw, 80px);
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
