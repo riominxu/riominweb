@@ -1,6 +1,10 @@
 # 徐韫琳 · Personal Portfolio
 
-A dark, editorial portfolio for a visual / AI / brand designer. Built with React + Vite, no UI framework.
+A light, editorial portfolio for a visual / AI / brand designer. Built with React + Vite, no UI framework.
+
+- Live site: https://odissea114514.github.io/riominweb/
+- Source: https://github.com/odissea114514/riominweb
+- Public build branch: `gh-pages`
 
 ## Run
 
@@ -36,6 +40,18 @@ pnpm serve
 ```
 
 It is available at `http://127.0.0.1:4173`.
+
+## Deployment
+
+The public site is published from the `gh-pages` branch; `main` contains the source. Pages is configured as a legacy branch deployment at the repository root.
+
+After changing the site:
+
+1. Build with `pnpm build` (or `node scripts/build.mjs` in this workspace).
+2. Publish the contents of `dist/` to the root of the `gh-pages` branch.
+3. Keep `design-source/`, `preview/`, `standalone/` and the source PDFs out of the repository.
+
+The live URL is `https://odissea114514.github.io/riominweb/`.
 
 ## Structure
 
