@@ -2,8 +2,8 @@
 
 A light, editorial portfolio for a visual / AI / brand designer. Built with React + Vite, no UI framework.
 
-- Live site: https://odissea114514.github.io/riominweb/
-- Source: https://github.com/odissea114514/riominweb
+- Live site: https://riominxu.github.io/riominweb/
+- Source: https://github.com/riominxu/riominweb
 - Public build branch: `gh-pages`
 
 ## Run
@@ -51,7 +51,7 @@ After changing the site:
 2. Publish the contents of `dist/` to the root of the `gh-pages` branch.
 3. Keep `design-source/`, `preview/`, `standalone/` and the source PDFs out of the repository.
 
-The live URL is `https://odissea114514.github.io/riominweb/`.
+The live URL is `https://riominxu.github.io/riominweb/`.
 
 ## Structure
 
