@@ -1,0 +1,12 @@
+node_modules/
+dist/
+snapshot/
+snapshot-iframe.html
+preview/
+standalone/
+design-source/
+*.log
+.DS_Store
+Thumbs.db
+.env
+.env.*

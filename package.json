@@ -1,0 +1,26 @@
+{
+  "name": "xuyunlin-portfolio",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:local": "node scripts/dev.mjs",
+    "build": "vite build",
+    "build:local": "node scripts/build.mjs",
+    "snapshot": "node scripts/build.mjs --snapshot",
+    "standalone": "node scripts/build.mjs --standalone",
+    "preview": "vite preview",
+    "serve": "node scripts/serve.mjs"
+  },
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.2",
+    "rolldown": "^1.2.16",
+    "vite": "^8.3.5",
+    "vite-plugin-singlefile": "^2.3.4"
+  }
+}
