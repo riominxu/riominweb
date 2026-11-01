@@ -222,7 +222,7 @@ function ProjectCard({ project, isFull, onOpen, delay = 0 }) {
                   <div
                     className="project-card__media-thumb"
                     data-type={item.type}
-                    key={`${item.type}-${item.label}`}
+                    key={`${item.type}-${item.src}`}
                   >
                     <img src={item.src} alt={item.alt} loading="lazy" draggable="false" />
                     <span className="project-card__media-tag">{item.tag}</span>

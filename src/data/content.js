@@ -104,13 +104,13 @@ const chiangMaiImage = (number) =>
 const chiangMaiGalleryLabels = [
   '展览现场 / 图纸与模型',
   '清迈古城 1:4000 模型',
-  '庭院与种植模型',
-  '台阶与入口模型',
-  '墙体开口模型',
-  '亭与种植模型',
-  'Site 5 / 1:100 节点模型',
-  '水景与地形模型',
-  '材料与缝隙细部',
+  '场地节点模型',
+  '场地节点模型',
+  '场地节点模型',
+  '场地节点模型',
+  '场地节点模型',
+  '场地节点模型',
+  '场地节点模型',
   '展览现场 / 模型与图纸',
 ];
 
@@ -651,8 +651,8 @@ const chiangMaiProject = {
   year: '2026',
   role: '独立设计 / 模型与布展',
   context: '香港大学 MLA Studio P3',
-  image: chiangMaiImage('01'),
-  imageAlt: '清迈正念之旅实体模型与展览现场',
+  image: chiangMaiImage('02'),
+  imageAlt: '清迈正念之旅 1:4000 清迈古城实体模型',
   imagePosition: 'center',
   summary:
     '把清迈古城的七个日常空间转译为实体模型与展览，让正念回到行走、观看与触摸的现场。',

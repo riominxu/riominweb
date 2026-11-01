@@ -187,7 +187,7 @@ export default function ProjectModal({ project, onClose, onNext }) {
                 </div>
                 <div className="modal__gallery">
                   {project.gallery.map((image, index) => (
-                    <figure className="modal__gallery-item" key={image.label}>
+                    <figure className="modal__gallery-item" key={image.src}>
                       <a
                         href={image.src}
                         target="_blank"
